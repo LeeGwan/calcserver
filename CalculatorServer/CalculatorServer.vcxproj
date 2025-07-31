@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{55e01f13-b1ad-4078-bfb0-8b6ea17a901c}</ProjectGuid>
+    <RootNamespace>CalculatorServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\KGA\Documents\CalculatorServer\CalculatorServer\include;C:\Users\tlkj1\Downloads\CalculatorServer\CalculatorServer\include;C:\AI\libtorch\include;C:\AI\libtorch\include\torch\csrc\api\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\KGA\Documents\CalculatorServer\CalculatorServer\Core\Navmesh\recastnavigation\Libs;C:\Users\tlkj1\Downloads\CalculatorServer\CalculatorServer\Core\Navmesh\recastnavigation\Libs;C:\Users\xenia\Downloads\CalculatorServer\CalculatorServer\CalculatorServer\Core\Navmesh\recastnavigation\Libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\KGA\Documents\CalculatorServer\CalculatorServer\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\KGA\Documents\CalculatorServer\CalculatorServer\Core\Navmesh\recastnavigation\Libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>AIheader.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>C:\AI\libtorch\include;C:\AI\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\AI\libtorch\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>torch.lib;torch_cuda.lib;caffe2_nvrtc.lib;c10.lib;c10_cuda.lib;torch_cpu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>USE_CUDA;
+TORCH_CUDA_AVAILABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\AI\libtorch_realse\include;C:\AI\libtorch_realse\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>torch.lib;
+c10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\AI\libtorch_realse\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Ability\Ability.cpp" />
+    <ClCompile Include="Core\Ability\AbilityPool\AbilityPool.cpp" />
+    <ClCompile Include="Core\Ability\AttackAbility\AttackAbility.cpp" />
+    <ClCompile Include="Core\Ability\SkillAbility\SkillAbility.cpp" />
+    <ClCompile Include="Core\AI\ActionExecutor\ActionExecutor.cpp" />
+    <ClCompile Include="Core\AI\GameStateAnalyzer\GameStateAnalyzer.cpp" />
+    <ClCompile Include="Core\AI\NavigationAnalyzer\NavigationAnalyzer.cpp" />
+    <ClCompile Include="Core\AI\ReplayBuffer\ReplayBuffer.cpp" />
+    <ClCompile Include="Core\AI\RLAgent\RLAgent.cpp" />
+    <ClCompile Include="Core\AI\RLManager\RLManager.cpp" />
+    <ClCompile Include="Core\AI\RLStructures\RLStructures.cpp" />
+    <ClCompile Include="Core\Algorithm\NavigationService.cpp" />
+    <ClCompile Include="Core\Algorithm\Prediction\Prediction.cpp" />
+    <ClCompile Include="Core\Algorithm\SkillDetected\SkillDetected.cpp" />
+    <ClCompile Include="Core\DamageLib\DamageLib.cpp" />
+    <ClCompile Include="Core\Error\ErrorClass.cpp" />
+    <ClCompile Include="Core\Error\is_valid.cpp" />
+    <ClCompile Include="Core\Maps\Anti\Anit_Hack.cpp" />
+    <ClCompile Include="Core\Maps\Input\Key_Input\InputComponent.cpp" />
+    <ClCompile Include="Core\Maps\Input\Key_Input\MoveAndAttackComponent.cpp" />
+    <ClCompile Include="Core\Maps\Input\Level_Input\Level_InputComponent.cpp" />
+    <ClCompile Include="Core\Maps\Map.cpp" />
+    <ClCompile Include="Core\Maps\MapSchedule.cpp" />
+    <ClCompile Include="Core\Maps\Output\OutputComponent.cpp" />
+    <ClCompile Include="Core\Maps\Spellinput\SpellinputComponent.cpp" />
+    <ClCompile Include="Core\Maps\Task\Task.cpp" />
+    <ClCompile Include="Core\Maps\Timer\Timer.cpp" />
+    <ClCompile Include="Core\Navmesh\NavMesh.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourAlloc.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourAssert.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourCommon.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMesh.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshBuilder.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshQuery.cpp" />
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNode.cpp" />
+    <ClCompile Include="Core\Object\ObjectPool.cpp" />
+    <ClCompile Include="Core\Object\Object\CharacterMesh\CharacterMesh.cpp" />
+    <ClCompile Include="Core\Object\Object\CombatStats\CombatStats.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Ezreal.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Nexus.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Practice_Tool.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Turret.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CharacterMesh.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CombatStats.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectState.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectStats.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\ObjectLib.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\ChampSpell\Ezreal\EzrealDamage.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\DamageChamp\DamageChamp.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\DamageSpell\DamageSpell.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\SpellDB\DB\ezreal_spell.cpp" />
+    <ClCompile Include="Core\Object\Object\DB\SpellDB\SpellLib.cpp" />
+    <ClCompile Include="Core\Object\Object\ItemList\Item.cpp" />
+    <ClCompile Include="Core\Object\Object\Navgation\Navigation.cpp" />
+    <ClCompile Include="Core\Object\Object\ObjectComponent\Object.cpp" />
+    <ClCompile Include="Core\Object\Object\objectState\objectState.cpp" />
+    <ClCompile Include="Core\Object\Object\objectStats\objectStats.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellBook\SpellBook.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellCastInfo\SpellCastInfo.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\AttackClient\AttackClient.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\BlinkClient\BlinkClient.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\CircleClient\CircleClient.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\LineClient\LineClient.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\MissileClient\MissileClient.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellDataResource\SpellDataResource.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellData\SpellData.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\Spellslot\Spellslot.cpp" />
+    <ClCompile Include="Core\Object\Object\Spells\SpellTargetClient\SpellTargetClient.cpp" />
+    <ClCompile Include="Core\Object\Object\TargetSelector\TargetSelector.cpp" />
+    <ClCompile Include="Core\Object\Object\Transform\Transform.cpp" />
+    <ClCompile Include="Core\Object\Object\VMT\VMT.cpp" />
+    <ClCompile Include="Core\utils\Find_OBJ\Find_OBJ.cpp" />
+    <ClCompile Include="Core\utils\Vector.cpp" />
+    <ClCompile Include="Core\utils\VectorUtils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RoutineServer\CalculatorServer.cpp" />
+    <ClCompile Include="RoutineServer\Message\CompactBinaryReader\CompactBinaryReader.cpp" />
+    <ClCompile Include="RoutineServer\Message\Hash32\XXHash32.cpp" />
+    <ClCompile Include="RoutineServer\Message\OptimizedBinaryPacketSerializer\OptimizedBinaryPacketSerializer.cpp" />
+    <ClCompile Include="RoutineServer\Message\OptimizedPacketHandler\OptimizedPacketHandler.cpp" />
+    <ClCompile Include="RoutineServer\UDP\Recv_To_RoutineServer.cpp" />
+    <ClCompile Include="RoutineServer\UDP\Send_To_RoutineServer.cpp" />
+    <ClCompile Include="RoutineServer\UDP\UdpBase.cpp" />
+    <ClCompile Include="RoutineServer\UDP\UdpManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Ability\Ability.h" />
+    <ClInclude Include="Core\Ability\AbilityPool\AbilityPool.h" />
+    <ClInclude Include="Core\Ability\AttackAbility\AttackAbility.h" />
+    <ClInclude Include="Core\Ability\SkillAbility\SkillAbility.h" />
+    <ClInclude Include="Core\AI\ActionExecutor\ActionExecutor.h" />
+    <ClInclude Include="Core\AI\AIflag\AIflags.h" />
+    <ClInclude Include="Core\AI\GameStateAnalyzer\GameStateAnalyzer.h" />
+    <ClInclude Include="Core\AI\NavigationAnalyzer\NavigationAnalyzer.h" />
+    <ClInclude Include="Core\AI\ReplayBuffer\ReplayBuffer.h" />
+    <ClInclude Include="Core\AI\RLAgent\RLAgent.h" />
+    <ClInclude Include="Core\AI\RLManager\RLManager.h" />
+    <ClInclude Include="Core\AI\RLStructures\RLStructures.h" />
+    <ClInclude Include="Core\Algorithm\NavigationService.h" />
+    <ClInclude Include="Core\Algorithm\Prediction\Prediction.h" />
+    <ClInclude Include="Core\Algorithm\Prediction\PredictionResult.h" />
+    <ClInclude Include="Core\Algorithm\Shape\Box\Box.h" />
+    <ClInclude Include="Core\Algorithm\Shape\Circle\Circle.h" />
+    <ClInclude Include="Core\Algorithm\SkillDetected\SkillDetected.h" />
+    <ClInclude Include="Core\DamageLib\DamageLib.h" />
+    <ClInclude Include="Core\Error\ErrorClass.h" />
+    <ClInclude Include="Core\Error\is_valid.h" />
+    <ClInclude Include="Core\Maps\Anti\Anit_Hack.h" />
+    <ClInclude Include="Core\Maps\Input\Key_Input\InputComponent.h" />
+    <ClInclude Include="Core\Maps\Input\Key_Input\MoveAndAttackComponent.h" />
+    <ClInclude Include="Core\Maps\Input\Level_Input\Level_InputComponent.h" />
+    <ClInclude Include="Core\Maps\Map.h" />
+    <ClInclude Include="Core\Maps\MapSchedule.h" />
+    <ClInclude Include="Core\Maps\Output\OutputComponent.h" />
+    <ClInclude Include="Core\Maps\Spellinput\SpellinputComponent.h" />
+    <ClInclude Include="Core\Maps\Task\Task.h" />
+    <ClInclude Include="Core\Maps\Timer\Timer.h" />
+    <ClInclude Include="Core\Navmesh\Flags\Flags.h" />
+    <ClInclude Include="Core\Navmesh\NavMesh.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourAlloc.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourAssert.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourCommon.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourMath.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMesh.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshBuilder.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshQuery.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNode.h" />
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourStatus.h" />
+    <ClInclude Include="Core\Object\ObjectPool.h" />
+    <ClInclude Include="Core\Object\Object\CharacterMesh\CharacterMesh.h" />
+    <ClInclude Include="Core\Object\Object\CombatStats\CombatStats.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Ezreal.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Nexus.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Practice_Tool.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Turret.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CharacterMesh.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CombatStats.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectState.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectStats.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\ObjectLib.h" />
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\Struct_ObjectDB.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\ChampSpell\Ezreal\EzrealDamage.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\DamageChamp\DamageChamp.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\DamageSpell\DamageSpell.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\DB\ezreal_spell.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\SpellLib.h" />
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\Struct_SpellDB.h" />
+    <ClInclude Include="Core\Object\Object\Flags.h" />
+    <ClInclude Include="Core\Object\Object\ItemList\Item.h" />
+    <ClInclude Include="Core\Object\Object\Navgation\Navigation.h" />
+    <ClInclude Include="Core\Object\Object\ObjectComponent\Object.h" />
+    <ClInclude Include="Core\Object\Object\objectState\objectState.h" />
+    <ClInclude Include="Core\Object\Object\objectStats\objectStats.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellBook\SpellBook.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellCastInfo\SpellCastInfo.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\AttackClient\AttackClient.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\BlinkClient\BlinkClient.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\CircleClient\CircleClient.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\LineClient\LineClient.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\MissileClient\MissileClient.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellDataResource\SpellDataResource.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellData\SpellData.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellFlags\SpellFlags.h" />
+    <ClInclude Include="Core\Object\Object\Spells\Spellslot\Spellslot.h" />
+    <ClInclude Include="Core\Object\Object\Spells\SpellTargetClient\SpellTargetClient.h" />
+    <ClInclude Include="Core\Object\Object\TargetSelector\TargetSelector.h" />
+    <ClInclude Include="Core\Object\Object\Transform\Transform.h" />
+    <ClInclude Include="Core\Object\Object\VMT\VMT.h" />
+    <ClInclude Include="Core\utils\Find_OBJ\Find_OBJ.h" />
+    <ClInclude Include="Core\utils\variableUtils.h" />
+    <ClInclude Include="Core\utils\Vector.h" />
+    <ClInclude Include="Core\utils\VectorUtils.h" />
+    <ClInclude Include="RoutineServer\CalculatorServer.h" />
+    <ClInclude Include="RoutineServer\Message\CompactBinaryReader\CompactBinaryReader.h" />
+    <ClInclude Include="RoutineServer\Message\Hash32\XXHash32.h" />
+    <ClInclude Include="RoutineServer\Message\OptimizedBinaryPacketSerializer\OptimizedBinaryPacketSerializer.h" />
+    <ClInclude Include="RoutineServer\Message\OptimizedPacketHandler\OptimizedPacketHandler.h" />
+    <ClInclude Include="RoutineServer\Message\PacketStructure\PacketStructure.h" />
+    <ClInclude Include="RoutineServer\NetworkPlatform.h" />
+    <ClInclude Include="RoutineServer\UDP\Recv_To_RoutineServer.h" />
+    <ClInclude Include="RoutineServer\UDP\Send_To_RoutineServer.h" />
+    <ClInclude Include="RoutineServer\UDP\UdpBase.h" />
+    <ClInclude Include="RoutineServer\UDP\UdpManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

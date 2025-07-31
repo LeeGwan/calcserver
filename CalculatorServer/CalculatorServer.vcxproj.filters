@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CalcServer">
+      <UniqueIdentifier>{9a7a959a-afd5-40f7-bb13-7ddee5dd3a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\UDP">
+      <UniqueIdentifier>{f7fb9379-aeeb-4522-8e7d-35a13eac8b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message">
+      <UniqueIdentifier>{1f5efcf4-efb5-4f81-9114-3dad9822bd7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMesh">
+      <UniqueIdentifier>{5501b71b-53df-43e0-bdbe-c4f08ed9d86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavMesh\Nav">
+      <UniqueIdentifier>{331e3ce7-afd6-40c0-aac9-f495ae878c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{84a72a23-8e08-4fd2-a095-f1e23817389e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool">
+      <UniqueIdentifier>{9b47e8b7-6a6e-4c8f-a22a-fe6a5d1b9fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object">
+      <UniqueIdentifier>{3b6f7806-71ac-4269-8868-75d679774e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\VMT">
+      <UniqueIdentifier>{5eab6d7e-ba8b-4171-b425-443b5bf334f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\objectState">
+      <UniqueIdentifier>{4d39b2cf-7b3e-4cb4-91ce-7ca13c3882a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Transform">
+      <UniqueIdentifier>{54fe112e-7cd6-4673-9753-22b17db48f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\ObjectStats">
+      <UniqueIdentifier>{675c24f9-f431-470f-9609-bd26c452a56a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\CombatStats">
+      <UniqueIdentifier>{b705df65-cfa3-417f-a1c5-923699fa769b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{5a11fabe-0294-4480-900e-320aa9430d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\ObjectLib">
+      <UniqueIdentifier>{61ab1cb7-b34a-42e9-8fb2-f92d953ee964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\ObjectLib\ObjectDB">
+      <UniqueIdentifier>{d5bada5a-2c7d-4a40-a9a4-47a260e421f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\ObjectLib\DB_INFOR">
+      <UniqueIdentifier>{02995b06-3734-4cd7-8ab3-3615c985dca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Task">
+      <UniqueIdentifier>{ec11f7c6-4e5f-48e4-9b20-7f868ebb424e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Input">
+      <UniqueIdentifier>{c90d48d6-5d08-41bd-8996-723edae0e40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Timer">
+      <UniqueIdentifier>{6f9e637e-2306-4175-b17c-28a2a5e39b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Navigation">
+      <UniqueIdentifier>{ffe8ff24-3e47-410e-b876-9347b3264549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\CharacterMesh">
+      <UniqueIdentifier>{1c61163b-738a-4ea6-b4b2-e7a51f5e01a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\TargetSelector">
+      <UniqueIdentifier>{c3c68ab2-eb92-4cdd-9280-71b93744003a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{e5c1b467-f580-4e19-9afa-ae31ce2754e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ErrorClass">
+      <UniqueIdentifier>{3ac43ea8-7054-4602-9089-e5c2c1b12c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DamageLib">
+      <UniqueIdentifier>{8d68d387-1f2e-47b4-85cc-a619065f40c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Spellinput">
+      <UniqueIdentifier>{9f25480f-2c6c-44c5-921b-2ea83506cb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\ItemList">
+      <UniqueIdentifier>{250e3afb-6980-4256-aea0-ed994fb8459b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells">
+      <UniqueIdentifier>{e7d67264-c4a2-4571-98df-574ea67abfa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellBook">
+      <UniqueIdentifier>{625d5a09-fa65-489c-8460-5102212803f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellCastInfo">
+      <UniqueIdentifier>{4fc2c3a9-77a8-4bb9-a814-85de05e91e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellData">
+      <UniqueIdentifier>{4db0acf0-0fd9-40b1-8803-7ea1c5277cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellDataResource">
+      <UniqueIdentifier>{69d292c9-de08-4e05-b0fe-b9489de2a124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\Spellslot">
+      <UniqueIdentifier>{730822db-c2c2-4ccd-affc-41f70e6ccc43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellTargetClient">
+      <UniqueIdentifier>{ee69c931-1848-46b9-9e05-dcb4e0c25592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellFlags">
+      <UniqueIdentifier>{37aaed8c-51cc-4d9d-9e17-ed903f723595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\SpellLib">
+      <UniqueIdentifier>{d977a0de-b3ea-4dcb-8bd2-990a548a7f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\SpellLib\SpellDB">
+      <UniqueIdentifier>{e488ac81-05e3-4a5b-99db-6ee5497a876e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ability">
+      <UniqueIdentifier>{b76ac577-2f97-4599-a662-659d4343c67d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ability\AbilityPool">
+      <UniqueIdentifier>{a4f6962e-f3e7-43c1-9bce-7c375d6d03b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ability\AttackAbility">
+      <UniqueIdentifier>{a436106f-13b0-41fa-8430-47b79e250bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ability\SkillAbility">
+      <UniqueIdentifier>{83486de2-eadc-48f8-9f85-24f882fbd536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient">
+      <UniqueIdentifier>{dc83346a-89fb-441e-957a-a3c77753de10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient\AttackClient">
+      <UniqueIdentifier>{cf36a0b6-07cf-477d-b909-306254754296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient\BlinkClient">
+      <UniqueIdentifier>{506db712-d841-41f9-8b1d-e11ea1fe1376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient\CircleClient">
+      <UniqueIdentifier>{0f0d61f0-ffa9-4405-86f2-871b93626f43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient\LineClient">
+      <UniqueIdentifier>{456db665-986e-47f6-8cce-e285ae5bbde6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spells\SpellClient\MissileClient">
+      <UniqueIdentifier>{76246480-0988-41c6-801e-2d28afe798d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Output">
+      <UniqueIdentifier>{cf0da3f7-0267-41bc-95bb-7278d4fb5842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Input\key_input">
+      <UniqueIdentifier>{7e853eb9-fa77-4f86-ad78-d775ab45c7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Input\level_input">
+      <UniqueIdentifier>{ef818b3e-6c1f-4d51-9e46-9e84e46ae124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\ANTI">
+      <UniqueIdentifier>{a1243647-5205-482c-91ee-d36918b56aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Shape">
+      <UniqueIdentifier>{1c6592bb-6f3d-4dab-9ce9-b00b9e77fd95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Shape\Circle">
+      <UniqueIdentifier>{b5ab03eb-b807-4af5-b15e-36b2b6d1c3b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Shape\Box">
+      <UniqueIdentifier>{3274fb05-4a96-4571-8ffc-65acec30c9b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\SkillDetected">
+      <UniqueIdentifier>{6a6f1eab-225e-4a92-aff2-e6d63aad0e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Prediction">
+      <UniqueIdentifier>{d8e98d9e-5c60-4264-8a6b-6d205ab3a5a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message\XXHash32">
+      <UniqueIdentifier>{1e74556e-a224-4ed5-a0a8-f6c1d3b2f63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message\OptimizedBinaryPacketSerializer">
+      <UniqueIdentifier>{cb1a2ad2-3bf8-4b15-978e-d3983fff8f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message\OptimizedPacketHandler">
+      <UniqueIdentifier>{07548e8c-fb81-4a1c-9664-5dd359c84877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message\PacketStructure">
+      <UniqueIdentifier>{b8476fea-1e13-4514-8a57-eb1d185c6165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcServer\Message\CompactBinaryReader">
+      <UniqueIdentifier>{c9e212fb-addb-42cb-9d26-c7aee771090a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{64c9d43c-ef0f-41e8-88d1-c8b32b3bdea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\hitcomponent">
+      <UniqueIdentifier>{5b830e18-7322-4231-997d-7166a165f8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spelldamage">
+      <UniqueIdentifier>{43787e02-2e30-4502-8cdb-ed10cb094166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spelldamage\DamageChamp">
+      <UniqueIdentifier>{1b059530-4b9f-48f0-b1e0-77038d633865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spelldamage\DamageSpell">
+      <UniqueIdentifier>{b8fe94d4-a681-4194-8d0c-1b1e96162b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool\Object\Spelldamage\damageDB">
+      <UniqueIdentifier>{03a43c64-8a0a-4820-ad76-430c921c5ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\AIflag">
+      <UniqueIdentifier>{f276d692-8bff-4f69-b2c5-3845970639b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\RLStructures">
+      <UniqueIdentifier>{c946ceee-ea77-4fe5-9beb-b22b73467e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\ReplayBuffer">
+      <UniqueIdentifier>{9e204181-33b9-464e-8565-38379c686daa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RoutineServer\UDP\UdpBase.cpp">
+      <Filter>CalcServer\UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\UDP\UdpManager.cpp">
+      <Filter>CalcServer\UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\CalculatorServer.cpp">
+      <Filter>CalcServer\UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\NavMesh.cpp">
+      <Filter>NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourAlloc.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourAssert.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourCommon.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMesh.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshBuilder.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshQuery.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Navmesh\recastnavigation\Include\DetourNode.cpp">
+      <Filter>NavMesh\Nav</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\utils\Vector.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\VMT\VMT.cpp">
+      <Filter>ObjectPool\Object\VMT</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\CombatStats\CombatStats.cpp">
+      <Filter>ObjectPool\Object\CombatStats</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\objectStats\objectStats.cpp">
+      <Filter>ObjectPool\Object\ObjectStats</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Transform\Transform.cpp">
+      <Filter>ObjectPool\Object\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\objectState\objectState.cpp">
+      <Filter>ObjectPool\Object\objectState</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\ObjectPool.cpp">
+      <Filter>ObjectPool\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\MapSchedule.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\ObjectLib.cpp">
+      <Filter>ObjectPool\Object\ObjectLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Nexus.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Turret.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CombatStats.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectState.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectStats.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Task\Task.cpp">
+      <Filter>Map\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Timer\Timer.cpp">
+      <Filter>Map\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Ezreal.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Navgation\Navigation.cpp">
+      <Filter>ObjectPool\Object\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\CharacterMesh\CharacterMesh.cpp">
+      <Filter>ObjectPool\Object\CharacterMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CharacterMesh.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\TargetSelector\TargetSelector.cpp">
+      <Filter>ObjectPool\Object\TargetSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\utils\Find_OBJ\Find_OBJ.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Error\ErrorClass.cpp">
+      <Filter>ErrorClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DamageLib\DamageLib.cpp">
+      <Filter>DamageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\utils\VectorUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\ObjectDB\DB\Practice_Tool.cpp">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Spellinput\SpellinputComponent.cpp">
+      <Filter>Map\Spellinput</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\ItemList\Item.cpp">
+      <Filter>ObjectPool\Object\ItemList</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellBook\SpellBook.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellBook</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellCastInfo\SpellCastInfo.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellCastInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellData\SpellData.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellData</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellDataResource\SpellDataResource.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellDataResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\Spellslot\Spellslot.cpp">
+      <Filter>ObjectPool\Object\Spells\Spellslot</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellTargetClient\SpellTargetClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellTargetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\SpellDB\DB\ezreal_spell.cpp">
+      <Filter>ObjectPool\Object\SpellLib\SpellDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\SpellDB\SpellLib.cpp">
+      <Filter>ObjectPool\Object\SpellLib\SpellDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\ObjectComponent\Object.cpp">
+      <Filter>ObjectPool\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ability\Ability.cpp">
+      <Filter>Ability</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ability\SkillAbility\SkillAbility.cpp">
+      <Filter>Ability\SkillAbility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ability\AttackAbility\AttackAbility.cpp">
+      <Filter>Ability\AttackAbility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ability\AbilityPool\AbilityPool.cpp">
+      <Filter>Ability\AbilityPool</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Error\is_valid.cpp">
+      <Filter>ErrorClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\MissileClient\MissileClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellClient\MissileClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\LineClient\LineClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellClient\LineClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\CircleClient\CircleClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellClient\CircleClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\BlinkClient\BlinkClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellClient\BlinkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\Spells\SpellClient\AttackClient\AttackClient.cpp">
+      <Filter>ObjectPool\Object\Spells\SpellClient\AttackClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Algorithm\NavigationService.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Output\OutputComponent.cpp">
+      <Filter>Map\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Input\Key_Input\InputComponent.cpp">
+      <Filter>Map\Input\key_input</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Input\Key_Input\MoveAndAttackComponent.cpp">
+      <Filter>Map\Input\key_input</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Anti\Anit_Hack.cpp">
+      <Filter>Map\ANTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Maps\Input\Level_Input\Level_InputComponent.cpp">
+      <Filter>Map\Input\level_input</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Algorithm\SkillDetected\SkillDetected.cpp">
+      <Filter>Algorithm\SkillDetected</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Algorithm\Prediction\Prediction.cpp">
+      <Filter>Algorithm\Prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\Message\Hash32\XXHash32.cpp">
+      <Filter>CalcServer\Message\XXHash32</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\Message\OptimizedPacketHandler\OptimizedPacketHandler.cpp">
+      <Filter>CalcServer\Message\OptimizedPacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\Message\OptimizedBinaryPacketSerializer\OptimizedBinaryPacketSerializer.cpp">
+      <Filter>CalcServer\Message\OptimizedBinaryPacketSerializer</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\Message\CompactBinaryReader\CompactBinaryReader.cpp">
+      <Filter>CalcServer\Message\CompactBinaryReader</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\UDP\Recv_To_RoutineServer.cpp">
+      <Filter>CalcServer\UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineServer\UDP\Send_To_RoutineServer.cpp">
+      <Filter>CalcServer\UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\DamageSpell\DamageSpell.cpp">
+      <Filter>ObjectPool\Object\Spelldamage\DamageSpell</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\DamageChamp\DamageChamp.cpp">
+      <Filter>ObjectPool\Object\Spelldamage\DamageChamp</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object\DB\SpellDamageDB\ChampSpell\Ezreal\EzrealDamage.cpp">
+      <Filter>ObjectPool\Object\Spelldamage\damageDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\RLStructures\RLStructures.cpp">
+      <Filter>AI\RLStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\ReplayBuffer\ReplayBuffer.cpp">
+      <Filter>AI\ReplayBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\RLAgent\RLAgent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\NavigationAnalyzer\NavigationAnalyzer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\GameStateAnalyzer\GameStateAnalyzer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\ActionExecutor\ActionExecutor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\AI\RLManager\RLManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RoutineServer\UDP\UdpBase.h">
+      <Filter>CalcServer\UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\UDP\UdpManager.h">
+      <Filter>CalcServer\UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\CalculatorServer.h">
+      <Filter>CalcServer\UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\NavMesh.h">
+      <Filter>NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourAlloc.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourAssert.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourCommon.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourMath.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMesh.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshBuilder.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNavMeshQuery.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourNode.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\recastnavigation\Include\DetourStatus.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Navmesh\Flags\Flags.h">
+      <Filter>NavMesh\Nav</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utils\Vector.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Flags.h">
+      <Filter>ObjectPool\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\VMT\VMT.h">
+      <Filter>ObjectPool\Object\VMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\CombatStats\CombatStats.h">
+      <Filter>ObjectPool\Object\CombatStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\objectStats\objectStats.h">
+      <Filter>ObjectPool\Object\ObjectStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Transform\Transform.h">
+      <Filter>ObjectPool\Object\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\objectState\objectState.h">
+      <Filter>ObjectPool\Object\objectState</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\ObjectPool.h">
+      <Filter>ObjectPool\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\MapSchedule.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\ObjectLib.h">
+      <Filter>ObjectPool\Object\ObjectLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\Struct_ObjectDB.h">
+      <Filter>ObjectPool\Object\ObjectLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Nexus.h">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Turret.h">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CombatStats.h">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectState.h">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_objectStats.h">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Task\Task.h">
+      <Filter>Map\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Timer\Timer.h">
+      <Filter>Map\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Ezreal.h">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Navgation\Navigation.h">
+      <Filter>ObjectPool\Object\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\CharacterMesh\CharacterMesh.h">
+      <Filter>ObjectPool\Object\CharacterMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB_Infor\DB_CharacterMesh.h">
+      <Filter>ObjectPool\Object\ObjectLib\DB_INFOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\TargetSelector\TargetSelector.h">
+      <Filter>ObjectPool\Object\TargetSelector</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utils\Find_OBJ\Find_OBJ.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Error\ErrorClass.h">
+      <Filter>ErrorClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utils\variableUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DamageLib\DamageLib.h">
+      <Filter>DamageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\utils\VectorUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\ObjectDB\DB\Practice_Tool.h">
+      <Filter>ObjectPool\Object\ObjectLib\ObjectDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Spellinput\SpellinputComponent.h">
+      <Filter>Map\Spellinput</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\ItemList\Item.h">
+      <Filter>ObjectPool\Object\ItemList</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellBook\SpellBook.h">
+      <Filter>ObjectPool\Object\Spells\SpellBook</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellCastInfo\SpellCastInfo.h">
+      <Filter>ObjectPool\Object\Spells\SpellCastInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellData\SpellData.h">
+      <Filter>ObjectPool\Object\Spells\SpellData</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellDataResource\SpellDataResource.h">
+      <Filter>ObjectPool\Object\Spells\SpellDataResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\Spellslot\Spellslot.h">
+      <Filter>ObjectPool\Object\Spells\Spellslot</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellTargetClient\SpellTargetClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellTargetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellFlags\SpellFlags.h">
+      <Filter>ObjectPool\Object\Spells\SpellFlags</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\Struct_SpellDB.h">
+      <Filter>ObjectPool\Object\SpellLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\DB\ezreal_spell.h">
+      <Filter>ObjectPool\Object\SpellLib\SpellDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDB\SpellLib.h">
+      <Filter>ObjectPool\Object\SpellLib\SpellDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\ObjectComponent\Object.h">
+      <Filter>ObjectPool\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ability\Ability.h">
+      <Filter>Ability</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ability\SkillAbility\SkillAbility.h">
+      <Filter>Ability\SkillAbility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ability\AttackAbility\AttackAbility.h">
+      <Filter>Ability\AttackAbility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ability\AbilityPool\AbilityPool.h">
+      <Filter>Ability\AbilityPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Error\is_valid.h">
+      <Filter>ErrorClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\NavigationService.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\MissileClient\MissileClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellClient\MissileClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\LineClient\LineClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellClient\LineClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\CircleClient\CircleClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellClient\CircleClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\BlinkClient\BlinkClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellClient\BlinkClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\Spells\SpellClient\AttackClient\AttackClient.h">
+      <Filter>ObjectPool\Object\Spells\SpellClient\AttackClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Output\OutputComponent.h">
+      <Filter>Map\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Input\Key_Input\InputComponent.h">
+      <Filter>Map\Input\key_input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Input\Key_Input\MoveAndAttackComponent.h">
+      <Filter>Map\Input\key_input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Anti\Anit_Hack.h">
+      <Filter>Map\ANTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Maps\Input\Level_Input\Level_InputComponent.h">
+      <Filter>Map\Input\level_input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Shape\Box\Box.h">
+      <Filter>Algorithm\Shape\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Shape\Circle\Circle.h">
+      <Filter>Algorithm\Shape\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\SkillDetected\SkillDetected.h">
+      <Filter>Algorithm\SkillDetected</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Prediction\Prediction.h">
+      <Filter>Algorithm\Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\Message\Hash32\XXHash32.h">
+      <Filter>CalcServer\Message\XXHash32</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\Message\OptimizedPacketHandler\OptimizedPacketHandler.h">
+      <Filter>CalcServer\Message\OptimizedPacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\Message\OptimizedBinaryPacketSerializer\OptimizedBinaryPacketSerializer.h">
+      <Filter>CalcServer\Message\OptimizedBinaryPacketSerializer</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\Message\PacketStructure\PacketStructure.h">
+      <Filter>CalcServer\Message\PacketStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\Message\CompactBinaryReader\CompactBinaryReader.h">
+      <Filter>CalcServer\Message\CompactBinaryReader</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\UDP\Recv_To_RoutineServer.h">
+      <Filter>CalcServer\UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\UDP\Send_To_RoutineServer.h">
+      <Filter>CalcServer\UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineServer\NetworkPlatform.h">
+      <Filter>CalcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Prediction\PredictionResult.h">
+      <Filter>Algorithm\Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\DamageSpell\DamageSpell.h">
+      <Filter>ObjectPool\Object\Spelldamage\DamageSpell</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\DamageChamp\DamageChamp.h">
+      <Filter>ObjectPool\Object\Spelldamage\DamageChamp</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object\DB\SpellDamageDB\ChampSpell\Ezreal\EzrealDamage.h">
+      <Filter>ObjectPool\Object\Spelldamage\damageDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\RLStructures\RLStructures.h">
+      <Filter>AI\RLStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\ReplayBuffer\ReplayBuffer.h">
+      <Filter>AI\ReplayBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\RLAgent\RLAgent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\AIflag\AIflags.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\NavigationAnalyzer\NavigationAnalyzer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\GameStateAnalyzer\GameStateAnalyzer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\ActionExecutor\ActionExecutor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AI\RLManager\RLManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
